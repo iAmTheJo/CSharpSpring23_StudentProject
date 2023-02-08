@@ -42,8 +42,11 @@ namespace App.LearningManagement.Helpers
             };
 
             studentService.Add(student);
+        }
 
-            studentService.studentList.ForEach(student => Console.WriteLine(student));
+        public void ListStudents()
+        {
+            studentService.Students.ForEach(Console.WriteLine);
         }
     }
 }
