@@ -24,5 +24,10 @@ namespace Library.LearningManagement.Models
             Assignments = new List<Assignments>();
             Modules = new List<Module>();
         }
+
+        public override string ToString()
+        {
+            return $"{Code} - {Name}";
+        }
     }
 }
